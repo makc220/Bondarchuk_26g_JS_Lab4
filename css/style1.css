@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to right, #D1FFD4, #BFBFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    font-family: Arial, sans-serif;
+}
+
+.converter-container {
+    background: #FFF1D2;
+    border-radius: 20px;
+    box-shadow: 17px 17px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    display: grid;
+   width: 1000px;
+   height: 600px;
+   grid-template-columns:repeat(2,1fr);
+   grid-template-rows:2;
+}
+.left-block{
+    grid-column:1;
+    grid-row: 2;
+}
+.Currency-text{
+    font-size: 44px;
+    font-weight: 100;
+    display: flex;
+    padding-left:30px ;
+}
+.symbol {
+    font-size: 260px;
+    font-weight:600;
+    display: inline-block;
+    position: relative;
+}
+.dollar {
+    position: relative;
+    bottom: 110px;
+    left: 40px;
+}
+.hryvnia {
+    position: relative;
+    top: 40px;
+    right: 30px;
+}
+.right-block {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;  
+    padding: 60px;
+    gap: 8px;
+}
+label {
+    font-size: 18px; 
+    font-weight: 600;
+    margin-top: 10px; 
+    display: flex;
+    font-weight: 100;
+}
+input {
+    width: 380px;
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 15px; 
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px; 
+    font-weight: bold;
+    margin: 15px 0; 
+    cursor: pointer;
+}
+button{
+    font-weight: 100;
+}
+.calculate-btn {
+    background: #3737A7;
+}
+.clear-btn {
+    background: #A43939;
+}
+
